@@ -61,7 +61,7 @@ nav a:hover {
 	margin: 0;
 }
 
-/* headers  */
+/* headers/ nav lines 88-102  */
 h1 {
 	color: rgb(255, 255, 255);
 }
@@ -175,18 +175,19 @@ nav a:hover::before {
 }
 
 /* Photos for section */
+
 #photo-2 {
-	background-image: url(/assets/155.jpg);
+	background-image: url(155.jpg);
 }
 #photo-3 {
-	background-image: url(/assets/155.jpg);
+	background-image: url(155.jpg);
 }
 #photo-4 {
-	background-image: url(/assets/155.jpg);
+	background-image: url(155.jpg);
 }
 
 #photo-5 {
-	background-image: url(/assets/155.jpg);
+	background-image: url(155.jpg);
 }
 
 /* footer  */
