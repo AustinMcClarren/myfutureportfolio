@@ -1,13 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 
 body{
-	font-family: 'Indie Flower', cursive;
-	font-weight: bolder;
+font-family: 'Shadows Into Light', cursive;
+font-weight: bolder;
 }
 
 html{ scroll-behavior: smooth; }
+
 
 /* TOP OF PAGE */
 #initals{
@@ -15,37 +15,58 @@ html{ scroll-behavior: smooth; }
 	font-weight: bolder;
 	font-size: large;
 	margin-top: 1rem;
+	color: #FFC600;
 }
 
-.button-1{
-border-color: black;
-float: right;
-margin: auto;
-margin-bottom: rem;
-
+h6{
+	text-align: center;
+	color:#FFC600;
 }
 
 .about-me{
 	font-size: 25px;
-	margin-right: 70rem;
-	margin-top: 9rem;
+	margin-top: 20rem;
+	text-align: center;
+}
+.big-font{
+	text-align: left;
+	font-weight: bolder;
+	margin-left: 50rem;
+
 }
 
+ section .main-page{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	scroll-snap-type: y mandatory; 
+}
 
-#firsthead {
+#quick-info {
 text-align: center;
-margin-top: 20rem;
 color: rgb(0, 0, 0);
 font-weight: bolder;
-font-size: 400%;
+font-size: 250%;
 }
 
-#sechead{
+#hero-name{
 text-align: center;
 color: rgb(0, 0, 0);
 font-weight: bolder;
-font-size: 30%;
+font-size: 18rem;
+margin-top: 15rem;
 }
+
+/* SKILLS SECTION */
+ #container {
+	height: unset;
+	max-width: 50%;
+	margin-right: 2rem;
+	width: 25%;
+	list-style: none;
+	height: 100vh;
+}
+
 
 
 
