@@ -1,22 +1,37 @@
 body {
 	font-family: "Shadows Into Light", cursive;
 	font-weight: 700;
-	/* min-width: 100vh; */
+	min-width: 100vh;
 	background-color: #222;
-	color: whitesmoke;
+	color: #FFFFFC;
 }
 
 html {
 	scroll-behavior: smooth;
 }
 
+
 /* TOP OF PAGE */
 #initals {
-	text-align: center;
 	font-weight: bolder;
 	font-size: 1.7rem;
-	margin-top: 1rem;
-	color: #fde74c;
+	color: rgb(253, 231, 76);
+	margin-top: 0.5rem;
+	margin-left: 3rem;
+}
+
+.nav-section  {
+	display: flex;
+	justify-content:space-between;
+}
+
+#link-git{
+	color:rgb(253, 231, 76);
+	text-decoration: none;
+	cursor: pointer;
+	margin-right: 1rem;
+	margin-top: 0.5rem;
+	font-size: 1.2rem;
 }
 
 h6 {
@@ -26,12 +41,19 @@ h6 {
 
 .about-me {
 	font-size: 25px;
-	margin-top: 35rem;
+	margin-top: 1rem;
 	text-align: center;
 	justify-items: center;
 	color: #FFFFFC;
 
 }
+.backround-col{
+	text-align: center;
+	margin-top: 30rem;
+
+	
+}
+
 .big-font {
 	text-align: left;
 	font-weight: bolder;
@@ -58,15 +80,14 @@ section .main-page {
 	font-weight: bolder;
 	font-size: 10rem;
 	position: relative;
-	text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-	-0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+	text-shadow: 0.05em 0 0 #ff0000bf,
+	-0.025em -0.05em 0 #00ff00bf, 0.025em 0.05em 0 #0000ffbf;
 	margin:auto;
 	margin-top: 10rem;
 	width: 50%;
 	margin-right: 18.5rem;
  animation: glitch 400ms infinite; 
 } 
-
 
 #first{
 position: absolute;
@@ -89,41 +110,75 @@ left: 0;
 }
 
 
+/* PROJECT SECTION  */
+#projects {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+	margin-top: 20rem;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+	font-size: 2rem;
+	
+}
+
+.project {
+  width: 30%;
+  margin: 1em;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project h3 {
+  margin-top: 1em;
+}
+
+h2,h3{
+	font-size: 4rem;
+	color: #fde74c;
+}
+
 /* glitch animation for name  */
 @keyframes glitch {
 0%{
 		text-shadow: 0.05em 0 0 rgba(255, 210, 137),
-		-0.05em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+		-0.05em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em 0.05em 0 rgb(253, 231, 76);
 
 }
 14%{
 		text-shadow: 0.05em 0 0 rgba(255, 210, 137),
-		-0.05em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+		-0.05em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em 0.05em 0 rgb(253, 231, 76);
 
 }
 15%{
 		text-shadow: -0.05em -0.025em 0 rgba(255, 210, 137),
-		0.025em 0.025em 0 rgba(244, 172, 50, 0.75), -0.05em -0.05em 0 rgba(0, 0,255, 0.75);
+		0.025em 0.025em 0 rgba(244, 172, 50, 0.75), -0.05em -0.05em 0 rgb(253, 231, 76);
 
 }
 49%{
 		text-shadow: -0.05em -0.025em 0 rgba(255, 210, 137),
-		0.025em 0.025em 0 rgba(244, 172, 50, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+		0.025em 0.025em 0 rgba(244, 172, 50, 0.75), -0.05em -0.05em 0 rgb(253, 231, 76);
 
 }
 50%{
 		text-shadow: 0.025em 0.05em 0 rgba(255, 210, 137),
-		0.05em 0 0 rgba(244, 172, 50, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+		0.05em 0 0 rgba(244, 172, 50, 0.75), 0 -0.05em 0 rgb(253, 231, 76);
 
 }
 99%{
 		text-shadow: 0.025em 0.05em 0 rgba(255, 210, 137),
-		0.05em 0 0 rgba(244, 172, 50, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+		0.05em 0 0 rgba(244, 172, 50, 0.75), 0 -0.05em 0 rgb(253, 231, 76);
 
 }
 100%{
 		text-shadow: -0.025em 0 0 rgba(255, 210, 137),
-		-0.025em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+		-0.025em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em -0.05em 0 rgb(253, 231, 76);
 
 }
 
