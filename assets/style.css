@@ -1,64 +1,105 @@
-
-
-
-body{
-font-family: 'Shadows Into Light', cursive;
-font-weight: bolder;
+body {
+	font-family: "Shadows Into Light", cursive;
+	font-weight: bolder;
 }
 
-html{ scroll-behavior: smooth; }
-
+html {
+	scroll-behavior: smooth;
+}
 
 /* TOP OF PAGE */
-#initals{
+#initals {
 	text-align: center;
 	font-weight: bolder;
 	font-size: large;
 	margin-top: 1rem;
-	color: #FFC600;
+	color: #ffc600;
 }
 
-h6{
+h6 {
 	text-align: center;
-	color:#FFC600;
+	color: #ffc600;
 }
 
-.about-me{
+.about-me {
 	font-size: 25px;
 	margin-top: 20rem;
 	text-align: center;
 }
-.big-font{
+.big-font {
 	text-align: left;
 	font-weight: bolder;
 	margin-left: 50rem;
-
 }
 
- section .main-page{
+section .main-page {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
-	scroll-snap-type: y mandatory; 
+	scroll-snap-type: y mandatory;
 }
 
 #quick-info {
-text-align: center;
-color: rgb(0, 0, 0);
-font-weight: bolder;
-font-size: 250%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-weight: bolder;
+	font-size: 250%;
 }
 
-#hero-name{
-text-align: center;
-color: rgb(0, 0, 0);
-font-weight: bolder;
-font-size: 18rem;
-margin-top: 15rem;
+#hero-name {
+	text-align: center;
+	font-weight: 700;
+	font-size: 10rem;
+	margin-top: 15rem;
+	text-transform: uppercase;
+	text-shadow: 0.05em 0 0 rgba(255, 0, 0, 75),
+		-0.025em -0.05em 0 rgba(0, 255, 0, 75), 0.025em 0.05em 0 rgba(0, 255, 0, 75);
+
+		/* /* animation: glitch 500ms infinite; */
+} 
+
+@keyframes glitch {
+0%{
+		text-shadow: 0.05em 0 0 rgba(255, 0, 0, 75),
+		-0.05em -0.025em 0 rgba(0, 255, 0, 75), -0.025em 0.05em 0 rgba(0, 255, 0, 75);
+
+}
+14%{
+		text-shadow: 0.05em 0 0 rgba(255, 0, 0, 75),
+		-0.05em -0.025em 0 rgba(0, 255, 0, 75), -0.025em 0.05em 0 rgba(0, 255, 0, 75);
+
+}
+15%{
+		text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 75),
+		0.025em 0.025em 0 rgba(0, 255, 0, 75), -0.05em -0.05em 0 rgba(0, 255, 0, 75);
+
+}
+49%{
+		text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 75),
+		0.025em 0.025em 0 rgba(0, 255, 0, 75), -0.05em -0.05em 0 rgba(0, 255, 0, 75);
+
+}
+50%{
+		text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 75),
+		0.05em 0 0 rgba(0, 255, 0, 75), 0 -0.05em 0 rgba(0, 255, 0, 75);
+
+}
+99%{
+		text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 75),
+		0.05em 0 0 rgba(0, 255, 0, 75), 0 -0.05em 0 rgba(0, 255, 0, 75);
+
+}
+100%{
+		text-shadow: -0.025em 0 0 rgba(255, 0, 0, 75),
+		-0.025em -0.025em 0 rgba(0, 255, 0, 75), -0.025em -0.05em 0 rgba(0, 255, 0, 75);
+
+}
+
+
 }
 
 /* SKILLS SECTION */
- #container {
+#container {
 	height: unset;
 	max-width: 50%;
 	margin-right: 2rem;
@@ -66,11 +107,6 @@ margin-top: 15rem;
 	list-style: none;
 	height: 100vh;
 }
-
-
-
-
-
 
 /* small */
 @media screen and (max-width: 576px) {
