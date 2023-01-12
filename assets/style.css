@@ -1,6 +1,9 @@
 body {
 	font-family: "Shadows Into Light", cursive;
-	font-weight: bolder;
+	font-weight: 700;
+	/* min-width: 100vh; */
+	background-color: #222;
+	color: whitesmoke;
 }
 
 html {
@@ -11,20 +14,23 @@ html {
 #initals {
 	text-align: center;
 	font-weight: bolder;
-	font-size: large;
+	font-size: 1.7rem;
 	margin-top: 1rem;
-	color: #ffc600;
+	color: #fde74c;
 }
 
 h6 {
 	text-align: center;
-	color: #ffc600;
+	color: #fde74c;
 }
 
 .about-me {
 	font-size: 25px;
-	margin-top: 20rem;
+	margin-top: 35rem;
 	text-align: center;
+	justify-items: center;
+	color: #FFFFFC;
+
 }
 .big-font {
 	text-align: left;
@@ -41,64 +47,87 @@ section .main-page {
 
 #quick-info {
 	text-align: center;
-	color: rgb(0, 0, 0);
-	font-weight: bolder;
+	color: #FFFFFC;
+	font-weight:bolder;
 	font-size: 250%;
 }
 
 #hero-name {
 	text-align: center;
-	font-weight: 700;
+	height: 20rem;
+	font-weight: bolder;
 	font-size: 10rem;
-	margin-top: 15rem;
-	text-transform: uppercase;
-	text-shadow: 0.05em 0 0 rgba(255, 0, 0, 75),
-		-0.025em -0.05em 0 rgba(0, 255, 0, 75), 0.025em 0.05em 0 rgba(0, 255, 0, 75);
-
-		/* /* animation: glitch 500ms infinite; */
+	position: relative;
+	text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+	-0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+	margin:auto;
+	margin-top: 10rem;
+	width: 50%;
+	margin-right: 18.5rem;
+ animation: glitch 400ms infinite; 
 } 
 
+
+#first{
+position: absolute;
+top: 0;
+left: 0;
+
+}
+
+ #hero-name div:first-child{
+	 animation: glitch 650ms infinite; 
+	 clip-path: polygon(0 0, 100% 0%, 100% 45%, 0 45%);
+	 transform: translate(-0.025em , -0.0125em);
+	 opacity: 0.8;
+}
+ #hero-name div:last-child{
+	animation: glitch 375ms infinite;
+	clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+	transform: translate(0.0125em , 0.025em);
+	opacity: 0.8;
+}
+
+
+/* glitch animation for name  */
 @keyframes glitch {
 0%{
-		text-shadow: 0.05em 0 0 rgba(255, 0, 0, 75),
-		-0.05em -0.025em 0 rgba(0, 255, 0, 75), -0.025em 0.05em 0 rgba(0, 255, 0, 75);
+		text-shadow: 0.05em 0 0 rgba(255, 210, 137),
+		-0.05em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
 
 }
 14%{
-		text-shadow: 0.05em 0 0 rgba(255, 0, 0, 75),
-		-0.05em -0.025em 0 rgba(0, 255, 0, 75), -0.025em 0.05em 0 rgba(0, 255, 0, 75);
+		text-shadow: 0.05em 0 0 rgba(255, 210, 137),
+		-0.05em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
 
 }
 15%{
-		text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 75),
-		0.025em 0.025em 0 rgba(0, 255, 0, 75), -0.05em -0.05em 0 rgba(0, 255, 0, 75);
+		text-shadow: -0.05em -0.025em 0 rgba(255, 210, 137),
+		0.025em 0.025em 0 rgba(244, 172, 50, 0.75), -0.05em -0.05em 0 rgba(0, 0,255, 0.75);
 
 }
 49%{
-		text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 75),
-		0.025em 0.025em 0 rgba(0, 255, 0, 75), -0.05em -0.05em 0 rgba(0, 255, 0, 75);
+		text-shadow: -0.05em -0.025em 0 rgba(255, 210, 137),
+		0.025em 0.025em 0 rgba(244, 172, 50, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
 
 }
 50%{
-		text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 75),
-		0.05em 0 0 rgba(0, 255, 0, 75), 0 -0.05em 0 rgba(0, 255, 0, 75);
+		text-shadow: 0.025em 0.05em 0 rgba(255, 210, 137),
+		0.05em 0 0 rgba(244, 172, 50, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
 
 }
 99%{
-		text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 75),
-		0.05em 0 0 rgba(0, 255, 0, 75), 0 -0.05em 0 rgba(0, 255, 0, 75);
+		text-shadow: 0.025em 0.05em 0 rgba(255, 210, 137),
+		0.05em 0 0 rgba(244, 172, 50, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
 
 }
 100%{
-		text-shadow: -0.025em 0 0 rgba(255, 0, 0, 75),
-		-0.025em -0.025em 0 rgba(0, 255, 0, 75), -0.025em -0.05em 0 rgba(0, 255, 0, 75);
+		text-shadow: -0.025em 0 0 rgba(255, 210, 137),
+		-0.025em -0.025em 0 rgba(244, 172, 50, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
 
 }
 
-
 }
-
-/* SKILLS SECTION */
 #container {
 	height: unset;
 	max-width: 50%;
@@ -108,33 +137,37 @@ section .main-page {
 	height: 100vh;
 }
 
-/* small */
-@media screen and (max-width: 576px) {
+
+/* for mobile! */
+
+
+ /* small */
+ @media screen and (max-width: 576px) {
 	body {
-		background-color: rgb(255, 255, 255);
-		background-image: radial-gradient(whitesmoke, rgb(255, 255, 255));
+		background-color: #F5E4BC(255, 255, 255);
+		background-image: radial-gradient(#F5E4BC, #F5E4BC(255, 255, 255));
 		display: block;
 	}
-}
-/* medium */
-@media screen and (min-width: 768px) {
+} 
+ /* medium  */
+ @media screen and (min-width: 768px) {
 	body {
-		background-color: rgb(255, 255, 255);
-		background-image: radial-gradient(whitesmoke, rgb(255, 255, 255));
+		background-color: #F5E4BC(255, 255, 255);
+		background-image: radial-gradient(#F5E4BC, #F5E4BC(255, 255, 255));
 	}
-}
-/* large */
-@media screen and (min-width: 992px) {
+} 
+ /* large */ 
+ @media screen and (min-width: 992px) {
 	body {
-		background-color: rgb(255, 255, 255);
-		background-image: radial-gradient(whitesmoke, rgb(255, 255, 255));
+		background-color: #F5E4BC(255, 255, 255);
+		background-image: radial-gradient(#F5E4BC, #F5E4BC(255, 255, 255));
 	}
-}
+} 
 
 /* xl  */
-@media screen and (min-width: 1200px) {
+ @media screen and (min-width: 1200px) {
 	body {
-		background-color: rgb(255, 255, 255);
-		background-image: radial-gradient(whitesmoke, rgb(255, 255, 255));
+		background-color: #F5E4BC(255, 255, 255);
+		background-image: radial-gradient(#F5E4BC, #F5E4BC(255, 255, 255));
 	}
-}
+} 
