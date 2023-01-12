@@ -199,30 +199,30 @@ h2,h3{
  /* small */
  @media screen and (max-width: 576px) {
 	body {
-		background-color: #F5E4BC(255, 255, 255);
-		background-image: radial-gradient(#F5E4BC, #F5E4BC(255, 255, 255));
-		display: block;
+		background-color: #222;
+		background-image: radial-gradient(#222, #222);
+	
 	}
 } 
  /* medium  */
  @media screen and (min-width: 768px) {
 	body {
-		background-color: #F5E4BC(255, 255, 255);
-		background-image: radial-gradient(#F5E4BC, #F5E4BC(255, 255, 255));
+		background-color: #222;
+		background-image: radial-gradient(#222, #222);
 	}
 } 
  /* large */ 
  @media screen and (min-width: 992px) {
 	body {
-		background-color: #F5E4BC(255, 255, 255);
-		background-image: radial-gradient(#F5E4BC, #F5E4BC(255, 255, 255));
+		background-color: #222;
+		background-image: radial-gradient(#222, #222);
 	}
 } 
 
 /* xl  */
  @media screen and (min-width: 1200px) {
 	body {
-		background-color: #F5E4BC(255, 255, 255);
-		background-image: radial-gradient(#F5E4BC, #F5E4BC(255, 255, 255));
+		background-color: #222;
+		background-image: radial-gradient(#222, #222);
 	}
 } 
